@@ -1,14 +1,18 @@
 # How to Deploy a Simple Dash App to Google Cloud Run
 
+Note: [Click here](https://youtu.be/64rih-vUgd4) to watch a video tutorial that accompanies these steps.
+
 Deploying a Dash app to Cloud Run can potentially be cheaper than deploying it to Heroku. Heroku used to offer a free tier, but as of September 2023, their [pricing data](https://www.heroku.com/pricing) indicates that it will cost at least $5 a month to run an app there. The Cloud Run setup shown in this project, on the other hand, can cost only pennies per month (if that) depending on how frequently the app is used. (Heroku does have price caps for many of their hosting packages, so it could very well be the better option in case your Dash app is accessed frequently). 
 
-(Many of the following steps are based on the readme in my [Dash School Dashboard](https://github.com/kburchfiel/dash_school_dashboard) project.)
+(Many of the following steps are based on the Readme in my [Dash School Dashboard](https://github.com/kburchfiel/dash_school_dashboard) project.)
 
 # Steps for Creating a Simple Dash App, Then Deploying It to Cloud Run:
 
+1. You may wish to create a new virtual environment for this project, but it's not strictly necessary. For steps on doing so, visit the Readme within my [Dash School Dashboard](https://github.com/kburchfiel/dash_school_dashboard) project.
+
 1. Copy the demo app code in the Dash tutorial's [Minimal App](https://dash.plotly.com/minimal-app) section into a new Python file called app.py, and place this file into a folder named 'sample_app' (or any name of your choice). 
 
-2. Run this app locally to make sure it's working as expected. Steps for doing so can be found within Dash's [Minimal Dash App](https://dash.plotly.com/minimal-app) documentation page. 
+1. Run this app locally to make sure it's working as expected. Steps for doing so can be found within Dash's [Minimal Dash App](https://dash.plotly.com/minimal-app) documentation page. 
 
     *Note: I received a 'Service Unavailable' message in my Cloud Run version of this app when trying to use a name other than app.py. Therefore, I recommend sticking to app.py as the program's name.*
 
