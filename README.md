@@ -4,7 +4,7 @@ Note: [Click here](https://youtu.be/64rih-vUgd4) to watch a video tutorial that 
 
 Deploying a Dash app to Cloud Run can potentially be cheaper than deploying it to Heroku. Heroku used to offer a free tier, but as of September 2023, their [pricing data](https://www.heroku.com/pricing) indicates that it will cost at least $5 a month to run an app there. The Cloud Run setup shown in this project, on the other hand, can cost only pennies per month (if that) depending on how frequently the app is used. (Heroku does have price caps for many of their hosting packages, so it could very well be the better option in case your Dash app is accessed frequently). 
 
-(Many of the following steps are based on the Readme in my [Dash School Dashboard](https://github.com/kburchfiel/dash_school_dashboard) project.)
+(Many of the following steps are based on the Readme in my [Dash School Dashboard](https://github.com/kburchfiel/dash_school_dashboard) project.) That project shows how to use Dash to create a series of interactive dashboards, so I recommend checking it out as well!
 
 # Steps for Creating a Simple Dash App, Then Deploying It to Cloud Run:
 
